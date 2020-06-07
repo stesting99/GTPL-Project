@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Guru99.Testcases.invalidLoginTestCase">
+      <class name="com.Guru99.Testcases.LoginTestCase">
         <methods>
           <include name="tearDownMethod"/>
-          <include name="inValidLoginApp"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="setUpSuite"/>
+          <include name="inValidLoginToApp"/>
         </methods>
-      </class> <!-- com.Guru99.Testcases.invalidLoginTestCase -->
+      </class> <!-- com.Guru99.Testcases.LoginTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

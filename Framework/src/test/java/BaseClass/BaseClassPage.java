@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 //import org.testng.annotations.BeforeTest;
+//import org.testng.annotations.Parameters;
 import org.testng.annotations.Parameters;
 
 import com.Guru99.Utility.BrowserFactory;
@@ -49,7 +50,9 @@ public class BaseClassPage
 	public void setUp(String browser, String BaseUrl) 
 	{
 		Reporter.log("Setting up browser and app Url", true);
+		
 		//driver =BrowserFactory.StartApp(driver, config.getBrowser(), config.getAppUrl());
+		
 		driver =BrowserFactory.StartApp(driver,browser, BaseUrl);
 		
 		Reporter.log("browser and app Url up and running", true);

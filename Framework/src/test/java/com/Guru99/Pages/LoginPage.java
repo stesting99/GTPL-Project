@@ -13,7 +13,7 @@ public class LoginPage {
 		this.driver= driver;
 	}
 	
-	@FindBy(how=How.NAME, using = "uid")  
+	@FindBy(how=How.XPATH, using = "//input[@name='uid']")  
 	WebElement username;
 	
 	@FindBy(how=How.XPATH, using="//input[@name='password']") 
@@ -25,6 +25,7 @@ public class LoginPage {
 	@FindBy(name="btnReset")
 	WebElement resetButton;
 	
+		
 	public void Login2App(String AppUname, String AppPwd) 
 	{
 		username.sendKeys(AppUname);

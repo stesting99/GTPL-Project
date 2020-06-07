@@ -10,18 +10,18 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class BrowserFactory {
-	static DesiredCapabilities cap;
+	//static DesiredCapabilities cap;
 		
-	@SuppressWarnings("deprecation")
+	//@SuppressWarnings("deprecation")
 	public static WebDriver StartApp(WebDriver driver, String browserName, String AppUrl) 
 	{
 		if (browserName.equalsIgnoreCase("Chrome")) 
 		{
-			cap =new DesiredCapabilities();
-			cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+			//cap =new DesiredCapabilities();
+			//cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 			
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			driver = new ChromeDriver(cap);
+			driver = new ChromeDriver();
 		}
 		else if (browserName.equalsIgnoreCase("Firefox")) 
 		{
